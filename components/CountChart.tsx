@@ -1,12 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Legend,
-  RadialBar,
-  RadialBarChart,
-  ResponsiveContainer,
-} from "recharts";
+import { RadialBar, RadialBarChart, ResponsiveContainer } from "recharts";
 
 const data = [
   {
@@ -45,11 +40,7 @@ export default function CountChart() {
             barSize={32}
             data={data}
           >
-            <RadialBar
-              //   label={{ position: "insideStart", fill: "#fff" }}
-              background
-              dataKey="count"
-            />
+            <RadialBar background dataKey="count" />
           </RadialBarChart>
         </ResponsiveContainer>
         <Image
